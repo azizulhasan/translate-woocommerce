@@ -27,23 +27,20 @@ in all language. This repo helps to do that. How? Here are few steps you have to
     desktop.
 
 3. Now open `translate.php` file to your editor. Change few varable value.
-    `
-    $this->taget_folder  = './taget_folder';\n
-    $this->source_folder  = './source_folder';
-    \\n$this->textdomain = 'webappick-pdf-invoice-for-woocommerce';\n
+    
+    a. `$this->taget_folder` is where tranlation will be pasted after translation for   `$this->source_folder`.
 
-    $this->demo_file  = $this->taget_folder."/".'strings-to-translate.po';
-    `
-    a. `$this->taget_folder` is where tranlation will be pasted after translation for `$this->source_folder`.
     b. `$this->source_folder` from where tranlation will be copied to `$this->taget_folder`.
+
     c. `$this->textdomain` textdomain of the plugin.
+
     d. `$this->demo_file` in this file put all of the strings need to be translated in a format.
         i. format is like this
-            ` 
-            #: includes/class-woo-invoice-pro-template.php:715\\n
-            msgid "Billing" \\n
-            msgstr ""\\n
-            `
+            ```php
+            #: includes/class-woo-invoice-pro-template.php:715
+            msgid "Billing" 
+            msgstr ""
+            ```
 4. After following these steps. Now you can download as many as file by following step 2 and its 
    substeps.
 
@@ -51,13 +48,3 @@ in all language. This repo helps to do that. How? Here are few steps you have to
 into `$this->target_folder` as `textdomain-de.po` textdomian which you put `$this->textdomain`
 variable.
 
-
-
-
-https://woocommerce.com/document/woocommerce-localization/
-/**
- * Get all strings from targeted  file.
- * Search the string in source file (from whare translation will come) if get.
- * Then put it in taget's  file
- *
- */
