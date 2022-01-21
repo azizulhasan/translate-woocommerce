@@ -44,7 +44,7 @@ in all language. This repo helps to do that. How? Here are few steps you have to
 4. After following these steps. Now you can download as many as file by following step 2 and its 
    substeps.
 
-5. Start your Apache and run the `translate.php` file. That it done. All file you put in `$this->source_folder` are translated with there corresponding file. Suppose if in `$this->source_folder` has a file named `wp-plugins-woocommerce-dev-de.po` it will be translated
+5. Final step. Start your Apache and run the `translate.php` file. That it done. All file you put in `$this->source_folder` are translated with there corresponding file. Suppose if in `$this->source_folder` has a file named `wp-plugins-woocommerce-dev-de.po` it will be translated
 into `$this->target_folder` as `textdomain-de.po` textdomian which you put `$this->textdomain`
 variable.
 
