@@ -8,21 +8,30 @@ in all language. This repo helps to do that. How? Here are few steps you have to
 
 1. Download the repo.
 2. Downloading translations from translate.wordpress.org manually.
-    a.   Go to https://translate.wordpress.org/projects/wp-plugins/woocommerce and look for your language in the list.
+
+    a. Go to https://translate.wordpress.org/projects/wp-plugins/woocommerce and look for your language in the list.
+
     b. Click the title to be taken to the section for that language.
+
     ![woocommrerce-laguage](https://woocommerce.com/wp-content/uploads/2012/01/2016-02-17-at-09.57.png?w=950)
+
     c. Click the heading under Set/Sub Project to view and download a Stable version.
+
     ![woocommerce-translated-laguage-version](https://woocommerce.com/wp-content/uploads/2012/01/2016-02-17-at-09.59.png?w=950)
+
     d. Scroll to the bottom for export options. Export a .po file for use on your site.
+
     ![export](https://woocommerce.com/wp-content/uploads/2012/01/2016-02-17-at-10.00.png?w=950)
+
     e. Put this file into woocommerce folder of this repo. Which is downloaded to local
     desktop.
 
 3. Now open `translate.php` file to your editor. Change few varable value.
     `
-    $this->taget_folder  = './taget_folder';
+    $this->taget_folder  = './taget_folder';\n
     $this->source_folder  = './source_folder';
-    $this->textdomain = 'webappick-pdf-invoice-for-woocommerce';
+    \\n$this->textdomain = 'webappick-pdf-invoice-for-woocommerce';\n
+
     $this->demo_file  = $this->taget_folder."/".'strings-to-translate.po';
     `
     a. `$this->taget_folder` is where tranlation will be pasted after translation for `$this->source_folder`.
@@ -31,9 +40,9 @@ in all language. This repo helps to do that. How? Here are few steps you have to
     d. `$this->demo_file` in this file put all of the strings need to be translated in a format.
         i. format is like this
             ` 
-            #: includes/class-woo-invoice-pro-template.php:715
-            msgid "Billing" 
-            msgstr ""
+            #: includes/class-woo-invoice-pro-template.php:715\\n
+            msgid "Billing" \\n
+            msgstr ""\\n
             `
 4. After following these steps. Now you can download as many as file by following step 2 and its 
    substeps.
