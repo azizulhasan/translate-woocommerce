@@ -24,8 +24,8 @@ class PT_TRANSLATION
      */
 
     public function __construct(){
-        $this->taget_folder  = './woo_invoice';
-        $this->source_folder  = './woocommerce';
+        $this->taget_folder  = './taget_folder';
+        $this->source_folder  = './source_folder';
         $this->demo_file  = $this->taget_folder."/".'textdomain-and-language-code.po';
         $this->textdomain = 'webappick-pdf-invoice-for-woocommerce';
     }
@@ -41,11 +41,6 @@ class PT_TRANSLATION
          * copied.
          */        
         $source_files = $this->get_files_from_dir($this->source_folder);
-        /**
-         * Get target folder files name as an array. In which files translation will be 
-         * pasted.
-         */
-        $target_files = $this->get_files_from_dir($this->taget_folder);
         
         $number = 1;
         /**
