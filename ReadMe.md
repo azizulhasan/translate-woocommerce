@@ -36,11 +36,11 @@ in all language. This repo helps to do that. How? Here are few steps you have to
 
     d. `$this->demo_file` in this file put all of the strings need to be translated in a format.
         i. format is like this
-            ```php
-            #: includes/class-woo-invoice-pro-template.php:715
-            msgid "Billing" 
-            msgstr ""
-            ```
+    ```php
+    #: includes/class-woo-invoice-pro-template.php:715
+    msgid "Billing" 
+    msgstr ""
+    ```
 4. After following these steps. Now you can download as many as file by following step 2 and its 
    substeps.
 
