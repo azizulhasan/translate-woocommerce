@@ -5,7 +5,6 @@
  * Then put it in taget's  file
  *
  */
-
 class PT_TRANSLATION
 {
 
